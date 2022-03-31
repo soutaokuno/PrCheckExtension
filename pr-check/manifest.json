@@ -1,0 +1,22 @@
+{
+  "name": "PlanChecker",
+  "version": "1.0",
+  "description": "施策ページ用チェックリスト",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["temp.js"]
+  }],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "PlanChecker"
+  },
+  "icons": {
+    "48": "images/icon.png"
+  },
+  "permissions": [
+    "activeTab","contextMenus","tabs"
+  ],
+  "manifest_version": 3
+}
